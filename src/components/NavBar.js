@@ -1,8 +1,15 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { BrowserRouter, NavLink } from "react-router-dom";
 
 function NavBar() {
-  return <div>{/*{code here}*/}</div>;
+  return <div className="navbar">
+    <BrowserRouter>
+    <NavLink to="/">Home</NavLink> 
+    <NavLink to="/movies">Movies</NavLink> 
+    <NavLink to="/directors">Directors</NavLink> 
+    <NavLink to="/actors">Actors</NavLink> 
+    </BrowserRouter>
+  </div>;
 }
 
 export default NavBar;
